@@ -13,7 +13,7 @@ var i = 10,
 	n = 10;
 console.log(++i);
 console.log(i);
-(n++);
+console.log(n++);
 
 console.log("");
 
