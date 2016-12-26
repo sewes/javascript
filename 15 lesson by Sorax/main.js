@@ -1,15 +1,37 @@
-var i = 5;
-
-var func = function() 
+var counter = (function()
 {
-	var i = 10;
-	console.log(i);
-	var innerfunc = function()
+	var count = 0;
+	return function()
 	{
-		i = 15;
-		console.log(i);
-	};
-	innerfunc();
-};
+		return count++;
+	}
+}());
 
-func();
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+
+console.log("function wich num");
+
+var counter1 = (function()
+{
+	var count1 = 0;
+	return function(num)
+	{
+		count = num !== undefined ? num : count;
+		return count++;
+	}
+}());
+
+console.log(counter1(500));
+console.log(counter1());
+console.log(counter1());
+console.log(counter1(35));
+console.log(counter1());
+console.log(counter1(10));
+console.log(counter1());
+console.log(counter1());
