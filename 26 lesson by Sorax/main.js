@@ -1,4 +1,4 @@
-alert("well")
+alert("well");
 
 console.log(Math.pow(2,2));
 console.log(Math.sqrt(400));
